@@ -1,0 +1,13 @@
+# ninja log v5
+0	629	1781954801865315549	CMakeFiles/androidopencvdemo.dir/androidopencvdemo.cpp.o	e1ad8da7d050683f
+3	676	1781954801912949129	CMakeFiles/androidopencvdemo.dir/mills/MillEngine.cpp.o	7c50693076c2d27b
+0	951	1781954802184005524	CMakeFiles/androidopencvdemo.dir/ImageProcessor.cpp.o	bf8b00e390f06319
+0	951	1781954802184823485	CMakeFiles/androidopencvdemo.dir/mills/MillNeg.cpp.o	83d1d09ccea167eb
+2	956	1781954802191086751	CMakeFiles/androidopencvdemo.dir/mills/MillORB.cpp.o	5495a83f66bbdb3c
+3	985	1781954802221593953	CMakeFiles/androidopencvdemo.dir/mills/MillContour.cpp.o	efc815718f49d8f8
+2	1027	1781954802262980767	CMakeFiles/androidopencvdemo.dir/mills/MillOFLK.cpp.o	63caf5106d985cb5
+1027	1324	1781954802520314421	/Users/szalad01/AndroidOpenCVDemo/app/build/intermediates/cxx/Debug/5y344e1r/obj/arm64-v8a/libandroidopencvdemo.so	f56823f581293bb3
+0	840	1781958459255344687	CMakeFiles/androidopencvdemo.dir/androidopencvdemo.cpp.o	e1ad8da7d050683f
+1	999	1781958459413790863	CMakeFiles/androidopencvdemo.dir/ImageProcessor.cpp.o	bf8b00e390f06319
+1	1137	1781958459552620810	CMakeFiles/androidopencvdemo.dir/mills/MillEngine.cpp.o	7c50693076c2d27b
+1137	1956	1781958460312548588	/Users/szalad01/AndroidOpenCVDemo/app/build/intermediates/cxx/Debug/5y344e1r/obj/arm64-v8a/libandroidopencvdemo.so	f56823f581293bb3

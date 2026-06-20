@@ -1,0 +1,27 @@
+{
+  "buildFiles": [
+    "/Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/szalad01/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/szalad01/AndroidOpenCVDemo/app/.cxx/Debug/5y344e1r/x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/szalad01/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/szalad01/AndroidOpenCVDemo/app/.cxx/Debug/5y344e1r/x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "androidopencvdemo::@6890427a1f51a3e7e1df": {
+      "artifactName": "androidopencvdemo",
+      "abi": "x86_64",
+      "output": "/Users/szalad01/AndroidOpenCVDemo/app/build/intermediates/cxx/Debug/5y344e1r/obj/x86_64/libandroidopencvdemo.so",
+      "runtimeFiles": []
+    }
+  }
+}

@@ -1,0 +1,1 @@
+/Users/szalad01/AndroidOpenCVDemo/app/build/intermediates/cxx/Debug/5y344e1r/obj/x86_64

@@ -1,0 +1,1 @@
+/Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/CMakeLists.txt

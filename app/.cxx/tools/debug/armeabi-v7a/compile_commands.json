@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/Users/szalad01/AndroidOpenCVDemo/app/.cxx/Debug/5y344e1r/armeabi-v7a",
+  "command": "/Users/szalad01/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi24 --sysroot=/Users/szalad01/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dandroidopencvdemo_EXPORTS -I/Users/szalad01/Library/Android/OpenCV-android-sdk/sdk/native/jni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -std=gnu++17 -o CMakeFiles/androidopencvdemo.dir/androidopencvdemo.cpp.o -c /Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/androidopencvdemo.cpp",
+  "file": "/Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/androidopencvdemo.cpp"
+},
+{
+  "directory": "/Users/szalad01/AndroidOpenCVDemo/app/.cxx/Debug/5y344e1r/armeabi-v7a",
+  "command": "/Users/szalad01/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi24 --sysroot=/Users/szalad01/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dandroidopencvdemo_EXPORTS -I/Users/szalad01/Library/Android/OpenCV-android-sdk/sdk/native/jni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -std=gnu++17 -o CMakeFiles/androidopencvdemo.dir/ImageProcessor.cpp.o -c /Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/ImageProcessor.cpp",
+  "file": "/Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/ImageProcessor.cpp"
+},
+{
+  "directory": "/Users/szalad01/AndroidOpenCVDemo/app/.cxx/Debug/5y344e1r/armeabi-v7a",
+  "command": "/Users/szalad01/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi24 --sysroot=/Users/szalad01/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dandroidopencvdemo_EXPORTS -I/Users/szalad01/Library/Android/OpenCV-android-sdk/sdk/native/jni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -std=gnu++17 -o CMakeFiles/androidopencvdemo.dir/mills/MillNeg.cpp.o -c /Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/mills/MillNeg.cpp",
+  "file": "/Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/mills/MillNeg.cpp"
+},
+{
+  "directory": "/Users/szalad01/AndroidOpenCVDemo/app/.cxx/Debug/5y344e1r/armeabi-v7a",
+  "command": "/Users/szalad01/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi24 --sysroot=/Users/szalad01/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dandroidopencvdemo_EXPORTS -I/Users/szalad01/Library/Android/OpenCV-android-sdk/sdk/native/jni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -std=gnu++17 -o CMakeFiles/androidopencvdemo.dir/mills/MillOFLK.cpp.o -c /Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/mills/MillOFLK.cpp",
+  "file": "/Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/mills/MillOFLK.cpp"
+},
+{
+  "directory": "/Users/szalad01/AndroidOpenCVDemo/app/.cxx/Debug/5y344e1r/armeabi-v7a",
+  "command": "/Users/szalad01/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi24 --sysroot=/Users/szalad01/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dandroidopencvdemo_EXPORTS -I/Users/szalad01/Library/Android/OpenCV-android-sdk/sdk/native/jni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -std=gnu++17 -o CMakeFiles/androidopencvdemo.dir/mills/MillORB.cpp.o -c /Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/mills/MillORB.cpp",
+  "file": "/Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/mills/MillORB.cpp"
+},
+{
+  "directory": "/Users/szalad01/AndroidOpenCVDemo/app/.cxx/Debug/5y344e1r/armeabi-v7a",
+  "command": "/Users/szalad01/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi24 --sysroot=/Users/szalad01/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dandroidopencvdemo_EXPORTS -I/Users/szalad01/Library/Android/OpenCV-android-sdk/sdk/native/jni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -std=gnu++17 -o CMakeFiles/androidopencvdemo.dir/mills/MillContour.cpp.o -c /Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/mills/MillContour.cpp",
+  "file": "/Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/mills/MillContour.cpp"
+},
+{
+  "directory": "/Users/szalad01/AndroidOpenCVDemo/app/.cxx/Debug/5y344e1r/armeabi-v7a",
+  "command": "/Users/szalad01/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=armv7-none-linux-androideabi24 --sysroot=/Users/szalad01/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dandroidopencvdemo_EXPORTS -I/Users/szalad01/Library/Android/OpenCV-android-sdk/sdk/native/jni/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -std=gnu++17 -o CMakeFiles/androidopencvdemo.dir/mills/MillEngine.cpp.o -c /Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/mills/MillEngine.cpp",
+  "file": "/Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/mills/MillEngine.cpp"
+}
+]

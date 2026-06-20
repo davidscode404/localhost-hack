@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Body Metrics</string>
+    <string name="app_title">Body Metrics</string>
+    <string name="app_subtitle">Height, weight, and BMI assessment</string>
+    <string name="live_badge">CAMERA</string>
+    <string name="fps_estimating">Camera ready</string>
+    <string name="bmi_label">BMI Estimate</string>
+    <string name="bmi_hint">Enter measured height and weight to calculate body mass index.</string>
+    <string name="height_label">Height</string>
+    <string name="weight_label">Weight</string>
+    <string name="height_hint">cm</string>
+    <string name="weight_hint">kg</string>
+    <string name="bmi_result_placeholder">BMI will appear here</string>
+    <string name="estimate_bmi">Estimate BMI</string>
+    <string name="cv_demos">CV Demos</string>
+    <string name="bmi_invalid">Enter valid height and weight</string>
+    <string name="algorithm_label">Processing Mode</string>
+    <string name="algorithm_hint">Choose the render pipeline for the camera preview.</string>
+    <string name="algo_raw">Raw</string>
+    <string name="algo_edges">Edges</string>
+    <string name="algo_contours">Contour</string>
+    <string name="algo_flow">Flow</string>
+    <string name="algo_orb">ORB</string>
+</resources>
