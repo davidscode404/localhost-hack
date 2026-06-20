@@ -1,8 +1,0 @@
-/Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/ImageProcessor.h
-/Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/mills/Mill.h
-/Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/mills/MillCanny.h
-/Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/mills/MillNeg.h
-/Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/mills/MillOFLK.h
-/Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/mills/MillORB.h
-/Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/mills/MillContour.h
-/Users/szalad01/AndroidOpenCVDemo/app/src/main/cpp/mills/MillEngine.h
