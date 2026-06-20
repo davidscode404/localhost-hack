@@ -1,16 +1,30 @@
 package com.example.androidopencvdemo
 
 import androidx.appcompat.app.AppCompatActivity
+import android.graphics.Color
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.View
 import android.widget.PopupMenu
 import com.example.androidopencvdemo.databinding.ActivityMainBinding
+import java.text.SimpleDateFormat
+import java.util.Calendar
 import java.util.Locale
+import android.view.ScaleGestureDetector
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var cameraEngine: GoblinCameraEngine
     private lateinit var imageEngine: GoblinImageEngine
+
+    private val clockHandler = Handler(Looper.getMainLooper())
+    private val clockRunnable = object : Runnable {
+        override fun run() {
+            updateDateTime()
+            clockHandler.postDelayed(this, 1000)
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,20 +37,39 @@ class MainActivity : AppCompatActivity() {
                 binding.goblinTextViewFPS.text = "%.1f in / %.1f out".format(fpsIn, fpsOut)
             }
         }
+        imageEngine.callbackBodyMetrics = { metrics ->
+            runOnUiThread {
+                displayBodyMetrics(metrics)
+            }
+        }
         cameraEngine = GoblinCameraEngine(this, imageEngine)
         lifecycle.addObserver(cameraEngine)
 
-        binding.buttonEstimateBmi.setOnClickListener {
-            estimateBmi()
-        }
         binding.buttonCvDemos.setOnClickListener {
             showCvDemoMenu(it)
         }
+
+        val scaleGestureDetector = ScaleGestureDetector(
+            this,
+            object : ScaleGestureDetector.SimpleOnScaleGestureListener() {
+                override fun onScale(detector: ScaleGestureDetector): Boolean {
+                    cameraEngine.onZoom(detector.scaleFactor)
+                    return true
+                }
+            }
+        )
+        binding.goblinSurfaceView.setOnTouchListener { _, event ->
+            scaleGestureDetector.onTouchEvent(event)
+            true
+        }
+
+        clockHandler.post(clockRunnable)
     }
 
     override fun onDestroy() {
         // To avoid C++ memory leak
         imageEngine.close()
+        clockHandler.removeCallbacks(clockRunnable)
         super.onDestroy()
     }
 
@@ -48,25 +81,42 @@ class MainActivity : AppCompatActivity() {
         imageEngine.setMode(mode)
     }
 
-    private fun estimateBmi() {
-        val heightCm = binding.editTextHeight.text.toString().toDoubleOrNull()
-        val weightKg = binding.editTextWeight.text.toString().toDoubleOrNull()
+    /// metrics = [heightCm, weightKg, bmi, confidence], per ImageProcessorWrapper.processWithMetrics
+    private fun displayBodyMetrics(metrics: FloatArray) {
+        val heightCm = metrics[0]
+        val weightKg = metrics[1]
+        val bmi = metrics[2]
+        val confidence = metrics[3]
 
-        if (heightCm == null || weightKg == null || heightCm <= 0.0 || weightKg <= 0.0) {
-            binding.textViewBmiResult.text = getString(R.string.bmi_invalid)
-            return
-        }
+        binding.textViewHeightValue.text = String.format(Locale.US, "Height: %.0f cm", heightCm)
+        binding.textViewWeightValue.text = String.format(Locale.US, "Weight: %.0f kg", weightKg)
 
-        val heightM = heightCm / 100.0
-        val bmi = weightKg / (heightM * heightM)
-        val category = when {
-            bmi < 18.5 -> "Underweight"
-            bmi < 25.0 -> "Healthy range"
-            bmi < 30.0 -> "Overweight"
-            else -> "Obesity range"
+        val isObese = bmi >= 30.0f
+        binding.textViewBmiResult.text = String.format(Locale.US, "BMI %.1f", bmi)
+        binding.textViewBmiResult.setTextColor(Color.parseColor(if (isObese) "#F87171" else "#4ADE80"))
+
+        binding.textViewConfidenceValue.text =
+            String.format(Locale.US, "Confidence: %.0f%%", confidence * 100)
+    }
+
+    private fun updateDateTime() {
+        val now = Calendar.getInstance()
+        val dayOfWeek = SimpleDateFormat("EEEE", Locale.US).format(now.time)
+        val month = SimpleDateFormat("MMMM", Locale.US).format(now.time)
+        val day = now.get(Calendar.DAY_OF_MONTH)
+        val year = now.get(Calendar.YEAR)
+        val time = SimpleDateFormat("HH:mm:ss", Locale.US).format(now.time)
+        binding.textViewSubtitle.text = "$dayOfWeek, $month $day${ordinalSuffix(day)}, $year, $time"
+    }
+
+    private fun ordinalSuffix(day: Int): String {
+        if (day in 11..13) return "th"
+        return when (day % 10) {
+            1 -> "st"
+            2 -> "nd"
+            3 -> "rd"
+            else -> "th"
         }
-        binding.textViewBmiResult.text =
-            String.format(Locale.US, "BMI %.1f  |  %s", bmi, category)
     }
 
     private fun showCvDemoMenu(anchor: View) {

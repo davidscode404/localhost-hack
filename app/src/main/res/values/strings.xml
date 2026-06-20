@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Body Metrics</string>
-    <string name="app_title">Body Metrics</string>
+    <string name="app_name">BMISight</string>
+    <string name="app_title">BMISight</string>
     <string name="app_subtitle">Height, weight, and BMI assessment</string>
     <string name="live_badge">CAMERA</string>
     <string name="fps_estimating">Camera ready</string>
@@ -21,4 +21,11 @@
     <string name="algo_contours">Contour</string>
     <string name="algo_flow">Flow</string>
     <string name="algo_orb">ORB</string>
+    <string name="live_estimate_label">Live Estimate</string>
+    <string name="live_estimate_hint">Stand in frame to estimate height, weight, and BMI.</string>
+    <string name="height_waiting">Height: --</string>
+    <string name="weight_waiting">Weight: --</string>
+    <string name="bmi_waiting">BMI: --</string>
+    <string name="confidence_waiting">Confidence: --</string>
+    <string name="frame_full_body">Position your full body in the frame</string>
 </resources>
