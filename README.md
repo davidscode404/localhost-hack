@@ -2,6 +2,8 @@
 
 **Real-time body metrics, estimated live from your phone's camera.**
 
+![](images/Screenshot_2026-06-20-16-16-59-07_f7102415a6fa1cce102146c5f3ee9f46.jpg)
+
 BMISight is an Android app that uses the device camera and on-device computer vision (OpenCV, via JNI/C++) to estimate a person's height, weight, and BMI in real time, with a live confidence score and a set of classic computer-vision algorithm demos built on the same camera pipeline.
 
 > ⚠️ **Not a medical device.** Height, weight, and BMI values are heuristic estimates derived from a 2D camera image with no depth sensor, reference object, or calibration of any kind. They are intended for demonstration purposes only — see [Known Limitations](#known-limitations) below.
